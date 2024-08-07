@@ -35,23 +35,23 @@
         td {
             background-color: #555;
         }
-        .note, .instructions, .tutorial, .download-apps {
+        .instructions, .tutorial, .download-apps {
             text-align: center;
             margin-top: 20px;
-        }
-        .note {
-            font-size: 0.9em;
-            color: #ccc;
         }
         .instructions {
             font-size: 1.5em;
             font-weight: bold;
+            color: #1e90ff;
         }
         .tutorial {
-            font-size: 0.9em;
+            font-size: 1em;
             color: #ccc;
             max-width: 600px;
             margin: 0 auto;
+        }
+        .tutorial p {
+            margin: 10px 0;
         }
         .download-apps a {
             color: #1e90ff;
@@ -63,7 +63,7 @@
         }
         @media (max-width: 600px) {
             .tutorial {
-                font-size: 0.8em;
+                font-size: 0.9em;
             }
             .instructions {
                 font-size: 1.3em;
@@ -75,6 +75,12 @@
     </style>
 </head>
 <body>
+    <div class="instructions">Adding Repo</div>
+    <div class="tutorial">
+        <p><strong>Auto:</strong> Click on "Install" and the repo will be sideloaded automatically.</p>
+        <p><strong>Manual:</strong> Copy the URL (from the manual column) and put it in More (➡️) Settings (⚙️) Browse (📂) Extension repos.</p>
+    </div>
+
     <h1>Manga Repos</h1>
     <div class="table-wrapper">
         <table>
@@ -162,12 +168,6 @@
 
     <div class="download-apps">
         <a href="https://bio.link/iitachiyomi" style="color: #1e90ff;">Download the Apps</a>
-    </div>
-
-    <div class="instructions">Adding Repo</div>
-    <div class="tutorial">
-        <p>Auto: Click on "Install" and the repo will be sideloaded automatically.</p>
-        <p>Manual: Copy the URL (from the manual column) and put it in More (➡️) Settings (⚙️) Browse (📂) Extension repos.</p>
     </div>
 
     <p class="note">Created by iiTachiyomi & Miyomi</p>
