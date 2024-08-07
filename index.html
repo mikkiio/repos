@@ -53,6 +53,9 @@
         .tutorial p {
             margin: 10px 0;
         }
+        .download-apps {
+            text-align: center;
+        }
         .download-apps a {
             color: #1e90ff;
             text-decoration: none;
@@ -60,6 +63,19 @@
         }
         .download-apps a:hover {
             text-decoration: underline;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #ccc;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .note ul {
+            list-style: none;
+            padding: 0;
+        }
+        .note li {
+            margin: 5px 0;
         }
         @media (max-width: 600px) {
             .tutorial {
@@ -153,21 +169,25 @@
                 </tr>
             </tbody>
         </table>
-        <p class="note">BR = Brazil, TR = Turkey</p>
-        <p class="note">⭐ indicates active repos.</p>
+        <div class="note">
+            <p>BR = Brazil, TR = Turkey</p>
+            <p>⭐ indicates active repos.</p>
+        </div>
     </div>
 
     <h1>Compatible Apps</h1>
     <div class="table-wrapper">
-        <ul>
-            <li>Aniyomi - Mihon fork + Anime support</li>
-            <li>Dantotsu - Saikou + Aniyomi extension</li>
-            <li>Awery - Dantotsu fork</li>
-        </ul>
+        <div class="note">
+            <ul>
+                <li>Aniyomi - Mihon fork + Anime support</li>
+                <li>Dantotsu - Saikou + Aniyomi extension</li>
+                <li>Awery - Dantotsu fork</li>
+            </ul>
+        </div>
     </div>
 
     <div class="download-apps">
-        <a href="https://bio.link/iitachiyomi" style="color: #1e90ff;">Download the Apps</a>
+        <a href="https://bio.link/iitachiyomi">Download the Apps</a>
     </div>
 
     <p class="note">Created by iiTachiyomi & Miyomi</p>
