@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repo Listing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .table-wrapper {
+            margin-bottom: 30px;
+            overflow-x: auto; /* Allows horizontal scrolling on small screens */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #444;
+            text-align: center;
+        }
+        th {
+            background-color: #444;
+        }
+        td {
+            background-color: #555;
+        }
+        .note, .instructions, .tutorial, .download-apps {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #ccc;
+        }
+        .instructions {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .tutorial {
+            font-size: 0.9em;
+            color: #ccc;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .download-apps a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .download-apps a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .tutorial {
+                font-size: 0.8em;
+            }
+            .instructions {
+                font-size: 1.3em;
+            }
+            table {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Manga Repos</h1>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Region</th>
+                    <th>Auto</th>
+                    <th>Manual</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Keiyoushi</td>
+                    <td>🌍</td>
+                    <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
+                    <td><a href="https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
+                </tr>
+                <tr>
+                    <td>Kavita</td>
+                    <td>🌍</td>
+                    <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/Kareadita/tach-extension/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
+                    <td><a href="https://raw.githubusercontent.com/Kareadita/tach-extension/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
+                </tr>
+                <tr>
+                    <td>Suwayomi</td>
+                    <td>🌍</td>
+                    <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/Suwayomi/tachiyomi-extension/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
+                    <td><a href="https://raw.githubusercontent.com/Suwayomi/tachiyomi-extension/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1>Anime Repos</h1>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Region</th>
+                    <th>Auto</th>
+                    <th>Manual</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Almighty Hak</td>
+                    <td>🌍</td>
+                    <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/almightyhak/aniyomi-anime-repo/main/index.min.json" style="color: #1e90ff;">Install</a></td>
+                    <td><a href="https://raw.githubusercontent.com/almightyhak/aniyomi-anime-repo/main/index.min.json" style="color: #1e90ff;">URL</a></td>
+                </tr>
+                <tr>
+                    <td>ni3x</td>
+                    <td>🌍</td>
+                    <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/ni3x/aniyomi-extensions/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
+                    <td><a href="https://raw.githubusercontent.com/ni3x/aniyomi-extensions/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
+                </tr>
+                <tr>
+                    <td>Hollow</td>
+                    <td>🌍</td>
+                    <td><a href="aniyomi://add-repo?url=https://codeberg.org/hollow/aniyomi-extensions-fr/media/branch/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
+                    <td><a href="https://codeberg.org/hollow/aniyomi-extensions-fr/media/branch/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
+                </tr>
+                <tr>
+                    <td>Claudemirovsky</td>
+                    <td>🇧🇷 🇹🇷</td>
+                    <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
+                    <td><a href="https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">BR = Brazil, TR = Turkey</p>
+    </div>
+
+    <div class="download-apps">
+        <a href="https://bio.link/iitachiyomi" style="color: #1e90ff;">Download the Apps</a>
+    </div>
+
+    <div class="instructions">Adding Repo</div>
+    <div class="tutorial">
+        <p>Auto: Click on "Install" and the repo will be sideloaded automatically.</p>
+        <p>Manual: Copy the URL (from the manual column) and put it in More (➡️) Settings (⚙️) Browse (📂) Extension repos.</p>
+    </div>
+
+    <p class="note">Created by iiTachiyomi & Miyomi</p>
+</body>
+</html>
