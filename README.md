@@ -1,4 +1,4 @@
-# Manga and Anime Repositories
+# Manga and Anime Repositories and More
 
 This document provides a list of manga and anime repositories that can be added to Tachiyomi and Aniyomi apps. Follow the instructions below to add these repositories to your app.
 
