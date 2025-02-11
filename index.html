@@ -1,234 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repo Listing</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #333;
-            color: #fff;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .table-wrapper {
-            margin-bottom: 30px;
-            overflow-x: auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            border: 1px solid #444;
-            text-align: center;
-        }
-        th {
-            background-color: #444;
-        }
-        td {
-            background-color: #555;
-        }
-        .instructions, .tutorial, .download-apps {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .instructions {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #1e90ff;
-        }
-        .tutorial {
-            font-size: 1em;
-            color: #ccc;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .tutorial p {
-            margin: 10px 0;
-        }
-        .download-apps {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .download-apps a {
-            color: #1e90ff;
-            text-decoration: none;
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-        .download-apps a:hover {
-            text-decoration: underline;
-        }
-        .note {
-            font-size: 0.9em;
-            color: #ccc;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .note ul {
-            list-style: none;
-            padding: 0;
-        }
-        .note li {
-            margin: 5px 0;
-        }
-        @media (max-width: 600px) {
-            .tutorial {
-                font-size: 0.9em;
-            }
-            .instructions {
-                font-size: 1.3em;
-            }
-            table {
-                font-size: 0.8em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repo Listing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .instruction-box {
+      background-color: #222;
+      border: 2px solid #e67e22;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .instruction-box h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+      color: #e67e22;
+    }
+    .instruction-box p {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+    .table-wrapper {
+      margin-bottom: 30px;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #444;
+      text-align: center;
+    }
+    th {
+      background-color: #444;
+    }
+    td {
+      background-color: #555;
+    }
+    .download-apps {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .download-apps a {
+      color: #1e90ff;
+      text-decoration: none;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .download-apps a:hover {
+      text-decoration: underline;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #ccc;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .note ul {
+      list-style: none;
+      padding: 0;
+    }
+    .note li {
+      margin: 5px 0;
+    }
+    @media (max-width: 600px) {
+      .instruction-box p {
+        font-size: 1em;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      table {
+        font-size: 0.8em;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="instructions">Extension Repos Websites</div>
-    <div class="tutorial">
-        <p><strong>Auto:</strong> Click on "Install" and the repo will be sideloaded automatically</p>
-        <p><strong>Manual:</strong> Copy the URL (from the manual column) and put it in More (➡️) Settings (⚙️) Browse (📂) Extension repos</p>
-    </div>
+  <div class="instruction-box">
+    <h2>⚠️ Repo Installation Instructions</h2>
+    <p><strong>Auto:</strong> Click on "Install" and the repo will be sideloaded automatically.</p>
+    <p><strong>Manual:</strong> Copy the URL (from the manual column) and put it in More (➡️) Settings (⚙️) Browse (📂) Extension repos.</p>
+  </div>
 
-    <h1>Manga Repos</h1>
-    <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Region</th>
-                    <th>Auto</th>
-                    <th>Manual</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Keiyoushi</td>
-                    <td>🌍</td>
-                    <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
-                    <td><a href="https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
-                </tr>
-                <tr>
-                    <td>Komikku</td>
-                    <td>🌍</td>
-                    <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/komikku-app/extensions/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
-                    <td><a href="https://raw.githubusercontent.com/komikku-app/extensions/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
-                </tr>
-                <tr>
-                    <td>Kavita</td>
-                    <td>🌍</td>
-                    <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/Kareadita/tach-extension/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
-                    <td><a href="https://raw.githubusercontent.com/Kareadita/tach-extension/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
-                </tr>
-                <tr>
-                    <td>Suwayomi</td>
-                    <td>🌍</td>
-                    <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/Suwayomi/tachiyomi-extension/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
-                    <td><a href="https://raw.githubusercontent.com/Suwayomi/tachiyomi-extension/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+  <h1>Manga Repos</h1>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Region</th>
+          <th>Auto</th>
+          <th>Manual</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Keiyoushi</td>
+          <td>🌍</td>
+          <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
+          <td><a href="https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
+        </tr>
+        <tr>
+          <td>Komikku</td>
+          <td>🌍</td>
+          <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/komikku-app/extensions/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
+          <td><a href="https://raw.githubusercontent.com/komikku-app/extensions/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
+        </tr>
+        <tr>
+          <td>Kavita</td>
+          <td>🌍</td>
+          <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/Kareadita/tach-extension/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
+          <td><a href="https://raw.githubusercontent.com/Kareadita/tach-extension/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
+        </tr>
+        <tr>
+          <td>Suwayomi</td>
+          <td>🌍</td>
+          <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/Suwayomi/tachiyomi-extension/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
+          <td><a href="https://raw.githubusercontent.com/Suwayomi/tachiyomi-extension/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-    <h1>Anime Repos</h1>
-    <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Region</th>
-                    <th>Auto</th>
-                    <th>Manual</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Almighty Hak</td>
-                    <td>🌍</td>
-                    <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/almightyhak/aniyomi-anime-repo/main/index.min.json" style="color: #1e90ff;">Install</a></td>
-                    <td><a href="https://raw.githubusercontent.com/almightyhak/aniyomi-anime-repo/main/index.min.json" style="color: #1e90ff;">URL</a></td>
-                </tr>
-                <tr>
-                    <td>ni3x</td>
-                    <td>🌍</td>
-                    <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/ni3x/aniyomi-extensions/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
-                    <td><a href="https://raw.githubusercontent.com/ni3x/aniyomi-extensions/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
-                </tr>
-                <tr>
-                    <td>Hollow</td>
-                    <td>🌍</td>
-                    <td><a href="aniyomi://add-repo?url=https://codeberg.org/hollow/aniyomi-extensions-fr/media/branch/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
-                    <td><a href="https://codeberg.org/hollow/aniyomi-extensions-fr/media/branch/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
-                </tr>
-                <tr>
-                    <td>Kohi-den</td>
-                    <td>🌍</td>
-                    <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/Kohi-den/extensions/main/index.min.json" style="color: #1e90ff;">Install</a></td>
-                    <td><a href="https://raw.githubusercontent.com/Kohi-den/extensions/main/index.min.json" style="color: #1e90ff;">URL</a></td>
-                </tr>
-                <tr>
-                    <td>Claudemirovsky</td>
-                    <td>🇧🇷 🇹🇷</td>
-                    <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
-                    <td><a href="https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+  <h1>Anime Repos</h1>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Region</th>
+          <th>Auto</th>
+          <th>Manual</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Almighty Hak</td>
+          <td>🌍</td>
+          <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/almightyhak/aniyomi-anime-repo/main/index.min.json" style="color: #1e90ff;">Install</a></td>
+          <td><a href="https://raw.githubusercontent.com/almightyhak/aniyomi-anime-repo/main/index.min.json" style="color: #1e90ff;">URL</a></td>
+        </tr>
+        <tr>
+          <td>ni3x</td>
+          <td>🌍</td>
+          <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/ni3x/aniyomi-extensions/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
+          <td><a href="https://raw.githubusercontent.com/ni3x/aniyomi-extensions/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
+        </tr>
+        <tr>
+          <td>Hollow</td>
+          <td>🌍</td>
+          <td><a href="aniyomi://add-repo?url=https://codeberg.org/hollow/aniyomi-extensions-fr/media/branch/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
+          <td><a href="https://codeberg.org/hollow/aniyomi-extensions-fr/media/branch/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
+        </tr>
+        <tr>
+          <td>Kohi-den</td>
+          <td>🌍</td>
+          <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/Kohi-den/extensions/main/index.min.json" style="color: #1e90ff;">Install</a></td>
+          <td><a href="https://raw.githubusercontent.com/Kohi-den/extensions/main/index.min.json" style="color: #1e90ff;">URL</a></td>
+        </tr>
+        <tr>
+          <td>Claudemirovsky</td>
+          <td>🇧🇷 🇹🇷</td>
+          <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json" style="color: #1e90ff;">Install</a></td>
+          <td><a href="https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json" style="color: #1e90ff;">URL</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-    <h1>Light Novel Repos</h1>
-    <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Region</th>
-                    <th>Auto</th>
-                    <th>Manual</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>LNReader</td>
-                    <td>🌍</td>
-                    <td><a href="lnreader://repo/add?url=https%3A%2F%2Fraw.githubusercontent.com%2FLNReader%2Flnreader-plugins%2Fplugins%2Fv3.0.0%2F.dist%2Fplugins.min.json" style="color: #1e90ff;">Install</a></td>
-                    <td><a href="https://lnreader.github.io/plugins" style="color: #1e90ff;">URL</a></td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="note">
-            <p>Note: Not all light novel apps require repos; some are built-in.</p>
-        </div>
-    </div>
-
-    <h1>Compatible Apps</h1>
-    <div class="table-wrapper">
-        <div class="note">
-            <ul>
-                <li>- Aniyomi - (Mihon fork) + Anime support</li>
-                <li>- Dantotsu - Saikou + Aniyomi extension</li>
-                <li>- Awery - (Dantotsu fork) + Manga + Anime + H</li>
-                <li>- Some apps, including iOS ones, require manual installation as they don't support auto-install</li>
-                <li>- LNReader 2.0.0 or newer</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="download-apps">
-        <a href="https://bio.link/iitachiyomi">Download All Apps</a>
-    </div>
-
+  <h1>Light Novel Repos</h1>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Region</th>
+          <th>Auto</th>
+          <th>Manual</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>LNReader</td>
+          <td>🌍</td>
+          <td><a href="lnreader://repo/add?url=https%3A%2F%2Fraw.githubusercontent.com%2FLNReader%2Flnreader-plugins%2Fplugins%2Fv3.0.0%2F.dist%2Fplugins.min.json" style="color: #1e90ff;">Install</a></td>
+          <td><a href="https://lnreader.github.io/plugins" style="color: #1e90ff;">URL</a></td>
+        </tr>
+      </tbody>
+    </table>
     <div class="note">
-        <p>@iiTachiyomi</p>
+      <p>Note: Not all light novel apps require repos; some are built-in.</p>
     </div>
+  </div>
+
+  <h1>Compatible Apps</h1>
+  <div class="table-wrapper">
+    <div class="note">
+      <ul>
+        <li>- Aniyomi - (Mihon fork) + Anime support</li>
+        <li>- Dantotsu - Saikou + Aniyomi extension</li>
+        <li>- Awery - (Dantotsu fork) + Manga + Anime + H</li>
+        <li>- Some apps, including iOS ones, require manual installation as they don't support auto-install</li>
+        <li>- LNReader 2.0.0 or newer</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="download-apps">
+    <a href="https://bio.link/iitachiyomi">Download All Apps</a>
+  </div>
+
+  <div class="note">
+    <p>by @iiTachiyomi</p>
+  </div>
 </body>
 </html>
