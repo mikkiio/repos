@@ -1,45 +1,57 @@
-# Manga and Anime Repositories and More
+# 🚨 We've Moved to a New Home!
 
-This document provides a list of manga and anime repositories that can be added to Tachiyomi and Aniyomi apps. Follow the instructions below to add these repositories to your app.
-
-## Manga Repos
-
-| Name       | Region  | Auto                                                                                             | Manual                                                                                              |
-|------------|---------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Keiyoushi  | 🌍      | [Install](tachiyomi://add-repo?url=https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json)   | [URL](https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json)                  |
-| Kavita     | 🌍      | [Install](tachiyomi://add-repo?url=https://raw.githubusercontent.com/Kareadita/tach-extension/repo/index.min.json)  | [URL](https://raw.githubusercontent.com/Kareadita/tach-extension/repo/index.min.json)              |
-| Suwayomi   | 🌍      | [Install](tachiyomi://add-repo?url=https://raw.githubusercontent.com/Suwayomi/tachiyomi-extension/repo/index.min.json) | [URL](https://raw.githubusercontent.com/Suwayomi/tachiyomi-extension/repo/index.min.json)          |
-
-## Anime Repos
-
-| Name          | Region         | Auto                                                                                                 | Manual                                                                                                      |
-|---------------|----------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Almighty Hak  | 🌍             | [Install](aniyomi://add-repo?url=https://raw.githubusercontent.com/almightyhak/aniyomi-anime-repo/main/index.min.json)  | [URL](https://raw.githubusercontent.com/almightyhak/aniyomi-anime-repo/main/index.min.json)              |
-| ni3x          | 🌍             | [Install](aniyomi://add-repo?url=https://raw.githubusercontent.com/ni3x/aniyomi-extensions/repo/index.min.json)        | [URL](https://raw.githubusercontent.com/ni3x/aniyomi-extensions/repo/index.min.json)                      |
-| Hollow        | 🌍             | [Install](aniyomi://add-repo?url=https://codeberg.org/hollow/aniyomi-extensions-fr/media/branch/repo/index.min.json) | [URL](https://codeberg.org/hollow/aniyomi-extensions-fr/media/branch/repo/index.min.json)                |
-| Claudemirovsky| 🇧🇷 🇹🇷      | [Install](aniyomi://add-repo?url=https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json) | [URL](https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json)         |
-
-> Note: BR = Brazil, TR = Turkey, created by iiTachiyomi & Miyomi
-
-## Download the Apps
-
-To download the Tachiyomi and Aniyomi apps, click the link below:
-
-[![Download Icon](https://img.icons8.com/ios-filled/50/1e90ff/download.png)](https://bio.link/iitachiyomi) [Click Here](https://bio.link/iitachiyomi)
-
-## Adding Repositories
-
-### Auto
-Click on "Install" next to the repository you want to add, and it will be sideloaded automatically.
-
-### Manual
-Copy the URL (from the manual column) and put it in the app's settings:
-
-- Go to `More (➡️)`
-- Select `Settings (⚙️)`
-- Choose `Browse (📁)`
-- Then go to `Extension repos`
+## Visit our new improved website:
+# [https://miyomi.pages.dev/](https://miyomi.pages.dev/)
 
 ---
 
+## What's New on Our Website?
+
+✨ **Completely redesigned interface** with better organization  
+✨ **Enhanced user experience** across all devices  
+✨ **Updated repository listings** with the latest extensions  
+✨ **Faster loading** and improved performance  
+✨ **Mobile-optimized** design for better browsing  
+
+## Why We Moved
+
+We've completely revamped our platform to provide:
+- Better categorization of repositories
+- More detailed extension information
+- Improved search and filtering options
+- Regular updates and maintenance
+- Enhanced compatibility information
+
+## Quick Access
+
+🔗 **Main Website**: [https://miyomi.pages.dev/](https://miyomi.pages.dev/)  
+📱 **All Apps Download**: [https://bio.link/iitachiyomi](https://bio.link/iitachiyomi)
+
+---
+
+## Legacy Information (Archived)
+
+*This repository previously contained manga and anime repository listings for Tachiyomi and Aniyomi apps. All content has been migrated to our new website with significant improvements and regular updates.*
+
+### Previous Categories (Now Enhanced on New Site):
+- 📚 **Manga Repositories** - Better organized with more sources
+- 📺 **Anime Repositories** - Updated with latest extensions
+- 📱 **Compatible Apps** - Complete compatibility guide
+- 🔧 **Installation Guides** - Step-by-step tutorials
+
+---
+
+## Support & Community
+
+For the latest updates, support, and community discussions, please visit our new website where you'll find:
+- Detailed installation guides
+- Troubleshooting help
+- Latest extension updates
+- Community forums
+
+**Thank you for your continued support! We look forward to seeing you on our new platform.**
+
+---
+
+*Maintained by iiTachiyomi & Miyomi*  
 *Inspired by Wotaku*
