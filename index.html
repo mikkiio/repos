@@ -1,181 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>We've Moved! | Miyomi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Miyomi has moved to miyomi.app">
+  <meta http-equiv="refresh" content="5;url=https://miyomi.app">
+  <title>Miyomi has moved</title>
+
   <style>
+    :root {
+      color-scheme: dark;
+      --page: #0b0d12;
+      --surface: #141821;
+      --border: #2a3240;
+      --text: #f4f7fb;
+      --muted: #aab4c3;
+      --accent: #6ea8fe;
+      --accent-hover: #91bdff;
+    }
+
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-      color: #fff;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 50% 0%, #1b315b 0, transparent 45%),
+        var(--page);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(100%, 620px);
+      padding: clamp(28px, 6vw, 52px);
       text-align: center;
-      padding: 20px;
+      background: rgba(20, 24, 33, 0.9);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
     }
-    
-    .container {
-      max-width: 800px;
-      background-color: rgba(0, 0, 0, 0.7);
-      border-radius: 15px;
-      padding: 40px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(10px);
+
+    .brand {
+      margin: 0 0 32px;
+      color: var(--accent);
+      font-size: 0.95rem;
+      font-weight: 750;
+      letter-spacing: 0.14em;
     }
-    
-    .logo {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 20px;
-      color: #fdbb2d;
-    }
-    
+
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-      color: #fff;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3rem);
+      letter-spacing: -0.045em;
     }
-    
+
     p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      margin-bottom: 25px;
+      max-width: 48ch;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.65;
     }
-    
-    .highlight {
-      color: #fdbb2d;
-      font-weight: bold;
-    }
-    
-    .new-website {
-      font-size: 1.4rem;
-      margin: 30px 0;
-      padding: 15px;
-      background-color: rgba(253, 187, 45, 0.2);
-      border-radius: 10px;
-      border-left: 4px solid #fdbb2d;
-    }
-    
-    .countdown {
+
+    .destination {
+      display: block;
+      margin: 32px 0 16px;
+      padding: 16px 20px;
+      color: var(--text);
+      background: #0e1219;
+      border: 1px solid var(--border);
+      border-radius: 12px;
       font-size: 1.1rem;
-      margin: 20px 0;
-      color: #fdbb2d;
-    }
-    
-    .btn {
-      display: inline-block;
-      background-color: #fdbb2d;
-      color: #1a2a6c;
-      padding: 12px 30px;
-      font-size: 1.1rem;
-      font-weight: bold;
+      font-weight: 650;
       text-decoration: none;
-      border-radius: 50px;
-      margin-top: 20px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(253, 187, 45, 0.4);
     }
-    
-    .btn:hover {
-      background-color: #ffcc4d;
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(253, 187, 45, 0.6);
+
+    .destination:hover {
+      border-color: var(--accent);
+      color: var(--accent-hover);
     }
-    
-    .features {
-      display: flex;
-      flex-wrap: wrap;
+
+    .button {
+      display: inline-flex;
+      align-items: center;
       justify-content: center;
-      gap: 20px;
-      margin: 30px 0;
-    }
-    
-    .feature {
-      flex: 1;
-      min-width: 200px;
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 20px;
+      min-height: 46px;
+      padding: 0 22px;
+      margin-top: 8px;
+      color: #08111f;
+      background: var(--accent);
       border-radius: 10px;
+      font-weight: 750;
+      text-decoration: none;
     }
-    
-    .feature h3 {
-      margin-bottom: 10px;
-      color: #fdbb2d;
+
+    .button:hover {
+      background: var(--accent-hover);
     }
-    
-    @media (max-width: 600px) {
-      .container {
-        padding: 25px;
-      }
-      
-      h1 {
-        font-size: 1.8rem;
-      }
-      
-      p {
-        font-size: 1rem;
-      }
-      
-      .new-website {
-        font-size: 1.2rem;
-      }
+
+    .redirect-note {
+      margin-top: 26px;
+      font-size: 0.875rem;
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <div class="logo">MIYOMI</div>
-    <h1>We've Moved to a New Home!</h1>
-    
-    <p>Thank you for visiting our repository listing page. We're excited to announce that we've completely redesigned and improved our website with a better user experience and more features.</p>
-    
-    <div class="new-website">
-      Our new website is available at:<br>
-      <span class="highlight">https://miyomi.pages.dev/</span>
-    </div>
-    
-    <p>You'll be automatically redirected in <span id="countdown" class="countdown">10</span> seconds.</p>
-    
-    <div class="features">
-      <div class="feature">
-        <h3>🎯 Improved Design</h3>
-        <p>Cleaner interface with better organization</p>
-      </div>
-      <div class="feature">
-        <h3>⚡ Faster Loading</h3>
-        <p>Optimized performance for quicker access</p>
-      </div>
-      <div class="feature">
-        <h3>📱 Mobile Friendly</h3>
-        <p>Enhanced experience on all devices</p>
-      </div>
-    </div>
-    
-    <a href="https://miyomi.pages.dev/" class="btn">Go to New Website Now</a>
-  </div>
+  <main>
+    <div class="brand">MIYOMI</div>
+
+    <h1>We’ve moved.</h1>
+
+    <p>
+      This page is no longer maintained. Visit the new Miyomi website for
+      current information and resources.
+    </p>
+
+    <a class="destination" href="https://miyomi.app">miyomi.app</a>
+
+    <a class="button" href="https://miyomi.app">Go to Miyomi</a>
+
+    <p class="redirect-note">
+      Redirecting in <span id="countdown">5</span> seconds.
+    </p>
+  </main>
 
   <script>
-    // Countdown and redirect functionality
-    let countdown = 10;
-    const countdownElement = document.getElementById('countdown');
-    
-    const countdownInterval = setInterval(() => {
-      countdown--;
-      countdownElement.textContent = countdown;
-      
-      if (countdown <= 0) {
-        clearInterval(countdownInterval);
-        window.location.href = "https://miyomi.pages.dev/";
+    const destination = "https://miyomi.app";
+    const countdownElement = document.getElementById("countdown");
+    let remaining = 5;
+
+    const timer = window.setInterval(() => {
+      remaining -= 1;
+      countdownElement.textContent = remaining;
+
+      if (remaining <= 0) {
+        window.clearInterval(timer);
+        window.location.assign(destination);
       }
     }, 1000);
   </script>
